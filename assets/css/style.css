@@ -1,0 +1,26 @@
+body {
+font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+	.card {
+		width: 80% !important;
+	}
+	.carrousel-item>img	{
+height: 50px;
+}
+}
+
+ .header .navbar {
+	 background-color: transparent !important;
+ }
+
+ main {
+	 background-color: black;
+ }
+
+ h3:hover {
+	color: rgb(230, 58, 164);
+  }
+
+  
