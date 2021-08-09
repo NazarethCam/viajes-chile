@@ -19,8 +19,9 @@ height: 50px;
 	 background-color: black;
  }
 
- h3:hover {
-	color: rgb(230, 58, 164);
-  }
 
+  h3 {
+	color: #fff;
+	cursor: default;
+  }
   
