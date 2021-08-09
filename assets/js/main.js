@@ -22,5 +22,6 @@ $("a").click(function (event) {
 $( "h3.movi" ).hover(function() {
 	$( this ).fadeOut( 100 );
 	$( this ).fadeIn( 500 );
+    
   });
 
