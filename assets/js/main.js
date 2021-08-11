@@ -37,16 +37,13 @@ $( "h3.movi" ).hover(function() {
     }
 });
   
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-	return new bootstrap.Tooltip(tooltipTriggerEl)({
-	boundary: "window",
-	template:
-	'<div class="tooltip tooltip-custom" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'	
-	});
-
-  })
+$('[data-toggle="tooltip"]').tooltip();  
   
+var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
 
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
 
 

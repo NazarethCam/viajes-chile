@@ -38,34 +38,29 @@ font-family: 'Montserrat', sans-serif;
 height: 50px;
 }
 }
-.tooltip-main {
-	width: 15px;
-	height: 15px;
-	border-radius: 50%;
-	font-weight: 700;
-	background: #1fe3f1;
-	margin: 4px 121px 0 5px;
-	float: right;
-	text-align: left !important;
+.tooltip .tooltip-inner {
+	background: black;
+	color: lime;
+	border: 2px solid lime;
   }
-  
-  .tooltip-qm {
-	float: left;
-	margin: -2px 0px 3px 4px;
-	font-size: 12px;
+  .tooltip .arrow {
+	width: 11px!important;
+	height: 11px!important;
+	border: 2px solid lime;
+	bottom: 1px;
   }
-  
-  .tooltip-inner {
-	max-width: 236px !important;
-	height: 76px;
-	font-size: 12px;
-	padding: 10px 15px 10px 20px;
-	background:#1fe3f1;
-	color: rgba(0, 0, 0, 0.7);
-	border: 1px solid #737373;
-	text-align: left;
+  .tooltip .arrow:before {
+	width: 11px;
+	height: 11px;
+	background: black;
+	border: 0;
   }
-  
-  .tooltip.show {
-	opacity: 1;
+  .tooltip.bs-tooltip-top .arrow {
+	transform: rotate(-135deg);
   }
+  .tooltip.bs-tooltip-bottom .arrow {
+	transform: rotate(135deg);
+	top: 2px;
+  }
+  .tooltip-arrow,
+  .red-tooltip + .tooltip > .tooltip-inner {background-color: #f00;}
