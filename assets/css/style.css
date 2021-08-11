@@ -1,16 +1,16 @@
+:root {
+	--primary: #19A3B8;
+}
+/* GLOBAL STYLES */
+.card-color {
+	background-color: var(--primary); 
+}
+
 body {
 font-family: 'Montserrat', sans-serif;
 }
 
-@media only screen and (max-width: 600px) {
-	.card {
-		width: 80% !important;
-	}
-	.carrousel-item>img	{
-height: 50px;
-}
-}
-
+/* NAVBAR */
  .header .navbar {
 	 background-color: transparent !important;
  }
@@ -19,9 +19,53 @@ height: 50px;
 	 background-color: black;
  }
 
-
+/* HOVER H2 */
   h3 {
 	color: #fff; 
 	cursor: default;
   }
+
+  .fas{
+	background-color: #19A3B8;
+ }
+
+ /* CARD */
+@media only screen and (max-width: 600px) {
+	.card {
+		width: 80% !important;
+	}
+	.carrousel-item>img	{
+height: 50px;
+}
+}
+.tooltip-main {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	font-weight: 700;
+	background: #1fe3f1;
+	margin: 4px 121px 0 5px;
+	float: right;
+	text-align: left !important;
+  }
   
+  .tooltip-qm {
+	float: left;
+	margin: -2px 0px 3px 4px;
+	font-size: 12px;
+  }
+  
+  .tooltip-inner {
+	max-width: 236px !important;
+	height: 76px;
+	font-size: 12px;
+	padding: 10px 15px 10px 20px;
+	background:#1fe3f1;
+	color: rgba(0, 0, 0, 0.7);
+	border: 1px solid #737373;
+	text-align: left;
+  }
+  
+  .tooltip.show {
+	opacity: 1;
+  }
