@@ -25,6 +25,8 @@ $( "h3.movi" ).hover(function() {
 
   });
 
+  $('[data-toggle="tooltip"]').tooltip();   
+   
   $('.fas').dblclick(function() {
     var theColorIs = $(this).css("background-color");
     theColorIs.split(" ").join('')
@@ -36,6 +38,7 @@ $( "h3.movi" ).hover(function() {
         $(this).css('background-color', '#19A3B8')
     }
 });
+<<<<<<< HEAD
   
 $('[data-toggle="tooltip"]').tooltip();  
   
@@ -46,4 +49,13 @@ myModal.addEventListener('shown.bs.modal', function () {
   myInput.focus()
 })
 
+=======
+ 
+ var myModal = document.getElementById('myModal')
+ var myInput = document.getElementById('myInput')
+ 
+ myModal.addEventListener('shown.bs.modal', function () {
+   myInput.focus()
+ })
+>>>>>>> main
 

@@ -1,5 +1,6 @@
 :root {
 	--primary: #19A3B8;
+	--secundary: #000000;
 }
 /* GLOBAL STYLES */
 .card-color {
@@ -16,17 +17,17 @@ font-family: 'Montserrat', sans-serif;
  }
 
  main {
-	 background-color: black;
+	 background-color: var(--secundary);
  }
 
-/* HOVER H2 */
+/* HOVER H3 */
   h3 {
 	color: #fff; 
 	cursor: default;
   }
 
   .fas{
-	background-color: #19A3B8;
+	background-color: var(--primary);
  }
 
  /* CARD */
@@ -38,10 +39,15 @@ font-family: 'Montserrat', sans-serif;
 height: 50px;
 }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 .tooltip .tooltip-inner {
 	background: black;
 	color: lime;
 	border: 2px solid lime;
+<<<<<<< HEAD
   }
   .tooltip .arrow {
 	width: 11px!important;
@@ -64,3 +70,28 @@ height: 50px;
   }
   .tooltip-arrow,
   .red-tooltip + .tooltip > .tooltip-inner {background-color: #f00;}
+=======
+  }
+  .tooltip .arrow {
+	width: 11px!important;
+	height: 11px!important;
+	border: 2px solid lime;
+	bottom: 1px;
+  }
+  .tooltip .arrow:before {
+	width: 11px;
+	height: 11px;
+	background: black;
+	border: 0;
+  }
+  .tooltip.bs-tooltip-top .arrow {
+	transform: rotate(-135deg);
+  }
+  .tooltip.bs-tooltip-bottom .arrow {
+	transform: rotate(135deg);
+	top: 2px;
+  }
+  .tooltip-arrow,
+  .red-tooltip + .tooltip > .tooltip-inner {background-color: #f00;}
+  
+>>>>>>> main
