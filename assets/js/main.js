@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    
     $(".card-title").click(function () {
         $(".card-text").toggle("slow", function () {
             // Animation complete.
@@ -25,6 +26,21 @@ $( "h3.movi" ).hover(function() {
 
   });
 
+  $(window).scroll(function(){
+    var scroll = jQuery(window).scrollTop();
+    if (scroll >= 100) {
+      $("#menuFijo").addClass("menu-color-fijo-scroll");
+    }
+  
+    else{
+      $("#menuFijo").removeClass("menu-color-fijo-scroll");  	
+    }
+  });
+
+  $( ".mov-1" ).on( "mouseover", function() {
+	$( this ).css( "color", "orange" );
+  });
+
   $('.fas').dblclick(function() {
     var theColorIs = $(this).css("background-color");
     theColorIs.split(" ").join('')
@@ -36,16 +52,4 @@ $( "h3.movi" ).hover(function() {
         $(this).css('background-color', '#19A3B8')
     }
 });
- 
- $('[data-toggle="tooltip"]').tooltip();
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-	return new bootstrap.Tooltip(tooltipTriggerEl)({
-	});
-   
-  })
-  
-  $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
-  });
-
+    

@@ -12,9 +12,15 @@ font-family: 'Montserrat', sans-serif;
 }
 
 /* NAVBAR */
- .header .navbar {
-	 background-color: transparent !important;
- }
+#menuFijo {
+	background-color: transparent;
+	transition: background-color 0.5s ease;
+  }
+  
+  .menu-color-fijo-scroll {
+	  background-color: rgba(0,0,0,0.9)!important;
+	transition: background-color 1s ease;
+  }
 
  main {
 	 background-color: var(--secundary);
@@ -29,6 +35,7 @@ font-family: 'Montserrat', sans-serif;
   .fas{
 	background-color: var(--primary);
  }
+ 
 
  /* CARD */
 @media only screen and (max-width: 600px) {
@@ -40,30 +47,3 @@ height: 50px;
 }
 }
 
-.tooltip .tooltip-inner {
-	background: black;
-	color: lime;
-	border: 2px solid lime;
-  }
-  .tooltip .arrow {
-	width: 11px!important;
-	height: 11px!important;
-	border: 2px solid lime;
-	bottom: 1px;
-  }
-  .tooltip .arrow:before {
-	width: 11px;
-	height: 11px;
-	background: black;
-	border: 0;
-  }
-  .tooltip.bs-tooltip-top .arrow {
-	transform: rotate(-135deg);
-  }
-  .tooltip.bs-tooltip-bottom .arrow {
-	transform: rotate(135deg);
-	top: 2px;
-  }
-  .tooltip-arrow,
-  .red-tooltip + .tooltip > .tooltip-inner {background-color: #f00;}
-  
