@@ -25,6 +25,8 @@ $( "h3.movi" ).hover(function() {
 
   });
 
+  $('[data-toggle="tooltip"]').tooltip();   
+   
   $('.fas').dblclick(function() {
     var theColorIs = $(this).css("background-color");
     theColorIs.split(" ").join('')
@@ -36,17 +38,11 @@ $( "h3.movi" ).hover(function() {
         $(this).css('background-color', '#19A3B8')
     }
 });
-  
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-	return new bootstrap.Tooltip(tooltipTriggerEl)({
-	boundary: "window",
-	template:
-	'<div class="tooltip tooltip-custom" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'	
-	});
-
-  })
-  
-
-
+ 
+ var myModal = document.getElementById('myModal')
+ var myInput = document.getElementById('myInput')
+ 
+ myModal.addEventListener('shown.bs.modal', function () {
+   myInput.focus()
+ })
 
